@@ -37,9 +37,10 @@ const[text,setText] = useState('Enter Text Here');
         <textarea className="form-control" id="mybox" rows="8" onChange={changehandler} value={text}></textarea>
       </div>
       <button className="btn btn-primary mx-3 my-2" onClick={handlelowclicked}>Convert To LowerCase</button>
+      
+      <button className="btn btn-primary mx-3 my-2" onClick={handleupclicked}>Convert To UpperCase</button>
       <button className="btn btn-primary mx-3 my-2 " onClick={handleClearclicked}>Clear Text Area</button>
       <button className="btn btn-primary mx-3 my-2 " onClick={handleremovespace}>Remove Extra Spaces</button>
-      <button className="btn btn-primary mx-3 my-2" onClick={handleupclicked}>Convert To UpperCase</button>
       <div className='container my-3'>
       <h3>Text Summary:</h3>
         <p>No. of words = {text.split(" ").length-1}</p>
